@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.box{
+	width: 100%;
+	height: 200px;
+/*	border: 2px solid black;*/
+	position: relative;
+	margin-top: 50px;
+	overflow: hidden;
+
+}
+
+.sun{
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	background-color: rgba(255, 140, 0, 0.7);
+	border-radius: 50%;
+	top: 50px;
+	left: -15px;
+	animation-name: sun;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+}
+
+.cloud1{
+	width: 150px;
+	height: 96px;
+	position: absolute;
+	top: 20px;
+	left: -10px;
+	opacity: 0.8;
+	animation-name: cloud1;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+
+}
+
+.cloud2{
+	width: 150px;
+	height: 96px;
+	position: absolute;
+	top: 30px;
+	left: 500px;
+	opacity: 0.8;
+	animation-name: cloud2;
+	animation-duration: 4s;
+	animation-delay: 0.2s;
+	animation-timing-function: ease-in;
+
+
+}
+
+.cloud3{
+	width: 150px;
+	height: 96px;
+	position: absolute;
+	top: 50px;
+	right: -10px;
+	opacity: 0.8;
+	animation-name: cloud3;
+	animation-duration: 4s;
+	animation-timing-function: ease-out;
+
+}
+
+
+@keyframes sun{
+	from{
+		top: 50px;
+		left: -15px;
+		background-color: rgba(255, 140, 0, 0.7);
+	}
+
+	to{
+		top: 15px;
+		left: 110%;
+		background-color: rgba(255, 140, 0, 1.0);
+	}
+}
+
+@keyframes cloud1{
+	from{
+		top: 20px;
+		left: -10px;
+	}
+
+	to{
+		top: 20px;
+		left: 110%;
+	}
+}
+
+@keyframes cloud2{
+	from{
+		top: 30px;
+		left: 500px;	
+	}
+	to{
+		top: 30px;
+		left: 110%;
+	}
+}
+
+@keyframes cloud3{
+	from{
+		top: 50px;
+		right: -10px;
+	}
+	to{
+		top: 30px;
+		right: 110%;
+	}
+}
